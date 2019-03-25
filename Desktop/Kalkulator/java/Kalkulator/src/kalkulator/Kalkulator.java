@@ -16,30 +16,40 @@ public class Kalkulator {
       amenu.wyswietl();
       Obliczenia aobliczenia=new Obliczenia();
       IO aIO=new IO();
-      aIO.wprowadzanieDanych(aobliczenia);
-      if(amenu.a==1){
+      if(amenu.b==1){
+      Figury f=null;
+       FabrykaFigur fabryka = new FabrykaFigur();
+       int k=aIO.ustawF();
+     f=fabryka.utworzFigure(k);
+     aIO.wprowadzaniedoF(f);
+    
+          System.out.println("Pole"+ f.nazwaFigury()+ " wynosi:  " +f.pole());
+      }
+      else if(amenu.b==2){
+          aIO.wprowadzanieDanych(aobliczenia);
+        if(amenu.c==1){
       
                System.out.println(aobliczenia.dodawanie());
       }
-      else if(amenu.a==2){
+      else if(amenu.c==2){
       
       System.out.println(aobliczenia.odejmowanie());
       }
-      else if(amenu.a==3){
+      else if(amenu.c==3){
       
       System.out.println(aobliczenia.mnozenie());
       }
-      else if(amenu.a==4){
+      else if(amenu.c==4){
       System.out.println(aobliczenia.dzielenie());
       
       }
-      else if(amenu.a==5){
+      else if(amenu.c==5){
        System.out.println(aobliczenia.potegowanie());
       }
-       else if(amenu.a==6){
+       else if(amenu.c==6){
        System.out.println(aobliczenia.pierwiastek());
       }
-      }
+      }}
     }
     
 

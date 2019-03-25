@@ -13,11 +13,17 @@ import java.util.Scanner;
  */
 public class Menu {
     Scanner pobierz=new Scanner(System.in);
-   public int a;
+   public int a,b,c;
     public void wyswietl(){
-        System.out.println("Witamy w twoim kalkulatorze!!!\nProsze o wybranie działania.\n1.Dodawanie\n2.Odejmowanie\n3.Mnożenie\n4.Dzielenie\n5.Potegowanie\n6.Pierwiastkowanie\n7.Exit\n");
-        a=pobierz.nextInt();
-        switch(a){
+        System.out.print("Witamy w twoim kalkulatorze!!!\n1.Figury\n2.Proste Obliczenia\n->");
+        b=pobierz.nextInt();
+        if(b==1){
+            System.out.println("Prosze o wybranie figury.\n1.Kwadrat\n2.Kolo\n->");
+        }
+         else if(b==2){
+             System.out.println("Prosze o wybranie działania.\n1.Dodawanie\n2.Odejmowanie\n3.Mnożenie\n4.Dzielenie\n5.Potegowanie\n6.Pierwiastkowanie\n7.Exit\n");
+          c=pobierz.nextInt();
+        switch(c){
             case 1: System.out.println("Wybrano dodawanie!");
             break;
              case 2: System.out.println("Wybrano odejmowanie!");
@@ -32,6 +38,10 @@ public class Menu {
                break;
                default: System.exit(0);
                break;
+        
         }
+    
+       }
+        
     }
 }

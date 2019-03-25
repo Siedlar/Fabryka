@@ -23,5 +23,26 @@ public class IO {
     a.setB(c);
     }
     
+    public void wprowadzaniedoF(Figury f){
+    
+        if( f.nazwaFigury().equals("Kwadrat") )
+        {
+            System.out.print( "\nBok kwadratu: " );
+            double bok = in.nextDouble();
+            ( (Kwadrat) f).setBok( bok );
+        }
+       else if(f.nazwaFigury().equals("Kolo")){
+            System.out.println("Promien kola");
+            double r=in.nextInt();
+            ((Kolo) f).setR(r);
+       
+       }
+       
+    }
+    public int ustawF(){
+    int y=in.nextInt();
+    return y;
+    }
+    }
    
-}
+
