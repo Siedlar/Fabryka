@@ -33,6 +33,12 @@ public class Kalkulator {
       System.out.println(aobliczenia.dzielenie());
       
       }
+      else if(amenu.a==5){
+       System.out.println(aobliczenia.potegowanie());
+      }
+       else if(amenu.a==6){
+       System.out.println(aobliczenia.pierwiastek());
+      }
       }
     }
     

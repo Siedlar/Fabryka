@@ -10,10 +10,10 @@ package kalkulator;
  * @author Siedlar
  */
 public class Obliczenia {
-  private int a;
-  private int b;
+  private double a;
+  private double b;
 
-    public int getA() {
+    public double getA() {
         return a;
     }
 
@@ -21,7 +21,7 @@ public class Obliczenia {
         this.a = a;
     }
 
-    public int getB() {
+    public double getB() {
         return b;
     }
 
@@ -29,17 +29,22 @@ public class Obliczenia {
         this.b = b;
     }
    
-         public int dodawanie(){
+         public double dodawanie(){
             return a+b;
         }
-        public int odejmowanie(){
+        public double odejmowanie(){
             return a-b;
         }
-        public int mnozenie(){
+        public double mnozenie(){
             return a*b;
         }
-        public int dzielenie(){
+        public double dzielenie(){
             return a/b;
         }
+                public double potegowanie(){
+            return Math.pow(a, b);
+        }
+                 public double pierwiastek(){
+            return Math.sqrt(a);}
         
 }

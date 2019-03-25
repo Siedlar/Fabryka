@@ -15,7 +15,7 @@ public class Menu {
     Scanner pobierz=new Scanner(System.in);
    public int a;
     public void wyswietl(){
-        System.out.println("Witamy w twoim kalkulatorze!!!\nProsze o wybranie działania.\n1.Dodawanie\n2.Odejmowanie\n3.Mnożenie\n4.Dzielenie\n5.Exit");
+        System.out.println("Witamy w twoim kalkulatorze!!!\nProsze o wybranie działania.\n1.Dodawanie\n2.Odejmowanie\n3.Mnożenie\n4.Dzielenie\n5.Potegowanie\n6.Pierwiastkowanie\n7.Exit\n");
         a=pobierz.nextInt();
         switch(a){
             case 1: System.out.println("Wybrano dodawanie!");
@@ -25,6 +25,10 @@ public class Menu {
               case 3: System.out.println("Wybrano mnożenie!");
               break;
                case 4: System.out.println("Wybrano dzielenie!");
+               break;
+               case 5: System.out.println("Wybrano potegowanie!");
+               break;
+               case 6: System.out.println("Wybrano pierwiastkowanie!");
                break;
                default: System.exit(0);
                break;
