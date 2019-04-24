@@ -55,6 +55,7 @@ public class Kompozyt {
                  lechia.dodaj(leaf10);
                  lechia.dodaj(leaf11);
                  organizacja.wypiszInfo();
+                 lechia.sprawdzUstawienie();
                  break;
                 case 5: 
                  JednostkaOrganizacyjna organizacja1= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -87,6 +88,7 @@ public class Kompozyt {
                  legia.dodaj(leaf210);
                  legia.dodaj(leaf211);
                  organizacja1.wypiszInfo();
+                 legia.sprawdzUstawienie();
                  break;
                 case 2:
                     JednostkaOrganizacyjna organizacja2= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -119,6 +121,7 @@ public class Kompozyt {
                  piast.dodaj(leaf310);
                  piast.dodaj(leaf311);
                  organizacja2.wypiszInfo();
+                 piast.sprawdzUstawienie();
                     break;
                     case 3:
                     JednostkaOrganizacyjna organizacja3= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -151,6 +154,7 @@ public class Kompozyt {
                  zaglebiel.dodaj(leaf410);
                  zaglebiel.dodaj(leaf411);
                  organizacja3.wypiszInfo();
+                 zaglebiel.sprawdzUstawienie();
                     break;
                          case 4:
                     JednostkaOrganizacyjna organizacja4= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -183,6 +187,7 @@ public class Kompozyt {
                  pogon.dodaj(leaf510);
                  pogon.dodaj(leaf511);
                  organizacja4.wypiszInfo();
+                 pogon.sprawdzUstawienie();
                     break;
                     case 6:
                     JednostkaOrganizacyjna organizacja5= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -215,6 +220,7 @@ public class Kompozyt {
                  cracovia.dodaj(leaf610);
                  cracovia.dodaj(leaf611);
                  organizacja5.wypiszInfo();
+                 cracovia.sprawdzUstawienie();
                     break;
                     case 7:
                     JednostkaOrganizacyjna organizacja6= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -247,6 +253,7 @@ public class Kompozyt {
                  jaga.dodaj(leaf710);
                  jaga.dodaj(leaf711);
                  organizacja6.wypiszInfo();
+                 jaga.sprawdzUstawienie();
                     break;
                     case 8:
                     JednostkaOrganizacyjna organizacja7= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -279,6 +286,7 @@ public class Kompozyt {
                  lech.dodaj(leaf810);
                  lech.dodaj(leaf811);
                  organizacja7.wypiszInfo();
+                 lech.sprawdzUstawienie();
                     break;
                     case 9: 
                  JednostkaOrganizacyjna organizacja9= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -311,6 +319,7 @@ public class Kompozyt {
                  wislak.dodaj(leaf910);
                  wislak.dodaj(leaf911);
                  organizacja9.wypiszInfo();
+                 wislak.sprawdzUstawienie();
                  break;
                 case 10: 
                  JednostkaOrganizacyjna organizacja10= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -343,6 +352,7 @@ public class Kompozyt {
                  wislap.dodaj(leaf1210);
                  wislap.dodaj(leaf1211);
                  organizacja10.wypiszInfo();
+                 wislap.sprawdzUstawienie();
                  break;
                 case 11:
                     JednostkaOrganizacyjna organizacja11= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -375,6 +385,7 @@ public class Kompozyt {
                  korona.dodaj(leaf1310);
                  korona.dodaj(leaf1311);
                  organizacja11.wypiszInfo();
+                 korona.sprawdzUstawienie();
                     break;
                     case 12:
                     JednostkaOrganizacyjna organizacja12= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -407,6 +418,7 @@ public class Kompozyt {
                  slask.dodaj(leaf1410);
                  slask.dodaj(leaf1411);
                  organizacja12.wypiszInfo();
+                 slask.sprawdzUstawienie();
                     break;
                          case 13:
                     JednostkaOrganizacyjna organizacja13= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -439,6 +451,7 @@ public class Kompozyt {
                  miedz.dodaj(leaf1510);
                  miedz.dodaj(leaf1511);
                  organizacja13.wypiszInfo();
+                 miedz.sprawdzUstawienie();
                     break;
                     case 14:
                     JednostkaOrganizacyjna organizacja14= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -471,6 +484,7 @@ public class Kompozyt {
                  zaglebie.dodaj(leaf1610);
                  zaglebie.dodaj(leaf1611);
                  organizacja14.wypiszInfo();
+                 zaglebie.sprawdzUstawienie();
                     break;
                     case 15:
                     JednostkaOrganizacyjna organizacja15= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -503,6 +517,7 @@ public class Kompozyt {
                  gornik.dodaj(leaf1710);
                  gornik.dodaj(leaf1711);
                  organizacja15.wypiszInfo();
+                 gornik.sprawdzUstawienie();
                     break;
                     case 16:
                     JednostkaOrganizacyjna organizacja16= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -535,6 +550,7 @@ public class Kompozyt {
                  arka.dodaj(leaf1810);
                  arka.dodaj(leaf1811);
                  organizacja16.wypiszInfo();
+                 arka.sprawdzUstawienie();
                     break;
          }
        
