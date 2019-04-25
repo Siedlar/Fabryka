@@ -18,11 +18,16 @@ public class Kompozyt {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        int a;
+        int wyb=0;
         // TODO code application logic here
         Scanner in=new Scanner(System.in);
-         System.out.println("Wybierz zespół\n 1.Lechia Gdańsk \n2.Piast Gliwice\n3.Zagłębie Lubin\n4.Pogoń Szczecin \n5.Legia Warszawa \n6.Cracovia\n7.Jagiellonia Białystok\n8.Lech Poznań\n9.Wisła Kraków\n10.Wisła Płock\n11.Korona Kielce\n12.Śląsk Wrocław\n13.Miedź Legnica\n14.Zagłębie Sosnowiec\n15.Górnik Zabrze\n16.Arka Gdynia");
+                    System.out.println("Wybierz zespół\n 1.Lechia Gdańsk \n2.Piast Gliwice\n3.Zagłębie Lubin\n4.Pogoń Szczecin \n5.Legia Warszawa \n6.Cracovia\n7.Jagiellonia Białystok\n8.Lech Poznań\n9.Wisła Kraków\n10.Wisła Płock\n11.Korona Kielce\n12.Śląsk Wrocław\n13.Miedź Legnica\n14.Zagłębie Sosnowiec\n15.Górnik Zabrze\n16.Arka Gdynia\n0.Exit");
 
-         int a=in.nextInt();
+do{
+
+
+         a=in.nextInt();
          switch(a){
              case 1: 
                  JednostkaOrganizacyjna organizacja= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -54,8 +59,25 @@ public class Kompozyt {
                  lechia.dodaj(leaf9);
                  lechia.dodaj(leaf10);
                  lechia.dodaj(leaf11);
-                 organizacja.wypiszInfo();
-                 lechia.sprawdzUstawienie();
+                 
+                
+                   wyb=0;
+                 while(wyb!=3){
+                      System.out.println("\nWybrany klub to Lechia Gdańsk\n1.Informacje o Klubie\n2.Aktualnie grana formacja\n3.Wyjscie");
+                      wyb=in.nextInt();
+                      if(wyb==1){
+                      organizacja.wypiszInfo();
+                      }
+                      else if(wyb==2){
+                      lechia.sprawdzUstawienie();
+                      }
+                    }
+                      
+               
+                 
+                 
+                
+                
                  break;
                 case 5: 
                  JednostkaOrganizacyjna organizacja1= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -87,8 +109,17 @@ public class Kompozyt {
                  legia.dodaj(leaf29);
                  legia.dodaj(leaf210);
                  legia.dodaj(leaf211);
-                 organizacja1.wypiszInfo();
-                 legia.sprawdzUstawienie();
+                  wyb=0;
+                 while(wyb!=3){
+                      System.out.println("\nWybrany klub to Legia Warszawa\n1.Informacje o Klubie\n2.Aktualnie grana formacja\n3.Wyjscie");
+                      wyb=in.nextInt();
+                      if(wyb==1){
+                      organizacja1.wypiszInfo();
+                      }
+                      else if(wyb==2){
+                      legia.sprawdzUstawienie();
+                      }
+                    }
                  break;
                 case 2:
                     JednostkaOrganizacyjna organizacja2= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -120,8 +151,17 @@ public class Kompozyt {
                  piast.dodaj(leaf39);
                  piast.dodaj(leaf310);
                  piast.dodaj(leaf311);
-                 organizacja2.wypiszInfo();
-                 piast.sprawdzUstawienie();
+                 wyb=0;
+                 while(wyb!=3){
+                     System.out.println("\nWybrany klub to Piast Gliwice\n1.Informacje o Klubie\n2.Aktualnie grana formacja\n3.Wyjscie");
+                      wyb=in.nextInt();
+                      if(wyb==1){
+                      organizacja2.wypiszInfo();
+                      }
+                      else if(wyb==2){
+                      piast.sprawdzUstawienie();
+                      }
+                    }
                     break;
                     case 3:
                     JednostkaOrganizacyjna organizacja3= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -153,8 +193,17 @@ public class Kompozyt {
                  zaglebiel.dodaj(leaf49);
                  zaglebiel.dodaj(leaf410);
                  zaglebiel.dodaj(leaf411);
-                 organizacja3.wypiszInfo();
-                 zaglebiel.sprawdzUstawienie();
+                  wyb=0;
+                 while(wyb!=3){
+                      System.out.println("\nWybrany klub to Zagłebie Lubin\n1.Informacje o Klubie\n2.Aktualnie grana formacja\n3.Wyjscie");
+                      wyb=in.nextInt();
+                      if(wyb==1){
+                      organizacja3.wypiszInfo();
+                      }
+                      else if(wyb==2){
+                      zaglebiel.sprawdzUstawienie();
+                      }
+                    }
                     break;
                          case 4:
                     JednostkaOrganizacyjna organizacja4= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -186,13 +235,22 @@ public class Kompozyt {
                  pogon.dodaj(leaf59);
                  pogon.dodaj(leaf510);
                  pogon.dodaj(leaf511);
-                 organizacja4.wypiszInfo();
-                 pogon.sprawdzUstawienie();
+                  wyb=0;
+                 while(wyb!=3){
+                      System.out.println("\nWybrany klub to Pogoń Szczecin\n1.Informacje o Klubie\n2.Aktualnie grana formacja\n3.Wyjscie");
+                      wyb=in.nextInt();
+                      if(wyb==1){
+                      organizacja4.wypiszInfo();
+                      }
+                      else if(wyb==2){
+                      pogon.sprawdzUstawienie();
+                      }
+                    }
                     break;
                     case 6:
                     JednostkaOrganizacyjna organizacja5= new JednostkaOrganizacyjna("UEFA","Organizacja");
                  JednostkaOrganizacyjna ekstraklasa5= new JednostkaOrganizacyjna("Ekstraklasa","Liga");
-                 JednostkaOrganizacyjna cracovia= new JednostkaOrganizacyjna("Pogoń Szczecin","Klub");
+                 JednostkaOrganizacyjna cracovia= new JednostkaOrganizacyjna("Cracovia","Klub");
                  JednostkaPodstawowa leaf61= new JednostkaPodstawowa("Peskovic","Bramkarz");
                  JednostkaPodstawowa leaf62= new JednostkaPodstawowa("Diego","Obrońca");
                  JednostkaPodstawowa leaf63= new JednostkaPodstawowa("Helik","Obrońca");
@@ -219,8 +277,17 @@ public class Kompozyt {
                  cracovia.dodaj(leaf69);
                  cracovia.dodaj(leaf610);
                  cracovia.dodaj(leaf611);
-                 organizacja5.wypiszInfo();
-                 cracovia.sprawdzUstawienie();
+                  wyb=0;
+                 while(wyb!=3){
+                      System.out.println("\nWybrany klub to Cracovia\n1.Informacje o Klubie\n2.Aktualnie grana formacja\n3.Wyjscie");
+                      wyb=in.nextInt();
+                      if(wyb==1){
+                      organizacja5.wypiszInfo();
+                      }
+                      else if(wyb==2){
+                      cracovia.sprawdzUstawienie();
+                      }
+                    }
                     break;
                     case 7:
                     JednostkaOrganizacyjna organizacja6= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -252,8 +319,17 @@ public class Kompozyt {
                  jaga.dodaj(leaf79);
                  jaga.dodaj(leaf710);
                  jaga.dodaj(leaf711);
-                 organizacja6.wypiszInfo();
-                 jaga.sprawdzUstawienie();
+               wyb=0;
+                 while(wyb!=3){
+                      System.out.println("\nWybrany klub to Jagiellonia Białystok\n1.Informacje o Klubie\n2.Aktualnie grana formacja\n3.Wyjscie");
+                      wyb=in.nextInt();
+                      if(wyb==1){
+                      organizacja6.wypiszInfo();
+                      }
+                      else if(wyb==2){
+                      jaga.sprawdzUstawienie();
+                      }
+                    }
                     break;
                     case 8:
                     JednostkaOrganizacyjna organizacja7= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -285,8 +361,17 @@ public class Kompozyt {
                  lech.dodaj(leaf89);
                  lech.dodaj(leaf810);
                  lech.dodaj(leaf811);
-                 organizacja7.wypiszInfo();
-                 lech.sprawdzUstawienie();
+                wyb=0;
+                 while(wyb!=3){
+                      System.out.println("\nWybrany klub to Lech Poznań\n1.Informacje o Klubie\n2.Aktualnie grana formacja\n3.Wyjscie");
+                      wyb=in.nextInt();
+                      if(wyb==1){
+                      organizacja7.wypiszInfo();
+                      }
+                      else if(wyb==2){
+                      lech.sprawdzUstawienie();
+                      }
+                    }
                     break;
                     case 9: 
                  JednostkaOrganizacyjna organizacja9= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -318,8 +403,17 @@ public class Kompozyt {
                  wislak.dodaj(leaf99);
                  wislak.dodaj(leaf910);
                  wislak.dodaj(leaf911);
-                 organizacja9.wypiszInfo();
-                 wislak.sprawdzUstawienie();
+                  wyb=0;
+                 while(wyb!=3){
+                     System.out.println("\nWybrany klub to Wisła Kraków\n1.Informacje o Klubie\n2.Aktualnie grana formacja\n3.Wyjscie");
+                      wyb=in.nextInt();
+                      if(wyb==1){
+                      organizacja9.wypiszInfo();
+                      }
+                      else if(wyb==2){
+                      wislak.sprawdzUstawienie();
+                      }
+                    }
                  break;
                 case 10: 
                  JednostkaOrganizacyjna organizacja10= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -351,8 +445,17 @@ public class Kompozyt {
                  wislap.dodaj(leaf129);
                  wislap.dodaj(leaf1210);
                  wislap.dodaj(leaf1211);
-                 organizacja10.wypiszInfo();
-                 wislap.sprawdzUstawienie();
+                  wyb=0;
+                 while(wyb!=3){
+                       System.out.println("\nWybrany klub to Wisła Płock\n1.Informacje o Klubie\n2.Aktualnie grana formacja\n3.Wyjscie");
+                      wyb=in.nextInt();
+                      if(wyb==1){
+                      organizacja10.wypiszInfo();
+                      }
+                      else if(wyb==2){
+                      wislap.sprawdzUstawienie();
+                      }
+                    }
                  break;
                 case 11:
                     JednostkaOrganizacyjna organizacja11= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -384,8 +487,17 @@ public class Kompozyt {
                  korona.dodaj(leaf139);
                  korona.dodaj(leaf1310);
                  korona.dodaj(leaf1311);
-                 organizacja11.wypiszInfo();
-                 korona.sprawdzUstawienie();
+                wyb=0;
+                 while(wyb!=3){
+                       System.out.println("\nWybrany klub to Korona Kielce\n1.Informacje o Klubie\n2.Aktualnie grana formacja\n3.Wyjscie");
+                      wyb=in.nextInt();
+                      if(wyb==1){
+                      organizacja11.wypiszInfo();
+                      }
+                      else if(wyb==2){
+                      korona.sprawdzUstawienie();
+                      }
+                    }
                     break;
                     case 12:
                     JednostkaOrganizacyjna organizacja12= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -417,8 +529,17 @@ public class Kompozyt {
                  slask.dodaj(leaf149);
                  slask.dodaj(leaf1410);
                  slask.dodaj(leaf1411);
-                 organizacja12.wypiszInfo();
-                 slask.sprawdzUstawienie();
+                 wyb=0;
+                 while(wyb!=3){
+                      System.out.println("\nWybrany klub to Śląsk Wrocław\n1.Informacje o Klubie\n2.Aktualnie grana formacja\n3.Wyjscie");
+                      wyb=in.nextInt();
+                      if(wyb==1){
+                      organizacja12.wypiszInfo();
+                      }
+                      else if(wyb==2){
+                      slask.sprawdzUstawienie();
+                      }
+                    }
                     break;
                          case 13:
                     JednostkaOrganizacyjna organizacja13= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -450,8 +571,17 @@ public class Kompozyt {
                  miedz.dodaj(leaf159);
                  miedz.dodaj(leaf1510);
                  miedz.dodaj(leaf1511);
-                 organizacja13.wypiszInfo();
-                 miedz.sprawdzUstawienie();
+                 wyb=0;
+                 while(wyb!=3){
+                       System.out.println("\nWybrany klub to Miedz Legnica\n1.Informacje o Klubie\n2.Aktualnie grana formacja\n3.Wyjscie");
+                      wyb=in.nextInt();
+                      if(wyb==1){
+                      organizacja13.wypiszInfo();
+                      }
+                      else if(wyb==2){
+                      miedz.sprawdzUstawienie();
+                      }
+                    }
                     break;
                     case 14:
                     JednostkaOrganizacyjna organizacja14= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -483,8 +613,17 @@ public class Kompozyt {
                  zaglebie.dodaj(leaf169);
                  zaglebie.dodaj(leaf1610);
                  zaglebie.dodaj(leaf1611);
-                 organizacja14.wypiszInfo();
-                 zaglebie.sprawdzUstawienie();
+                 wyb=0;
+                 while(wyb!=3){
+                       System.out.println("\nWybrany klub to Zagłebie Sosnowiec\n1.Informacje o Klubie\n2.Aktualnie grana formacja\n3.Wyjscie");
+                      wyb=in.nextInt();
+                      if(wyb==1){
+                      organizacja14.wypiszInfo();
+                      }
+                      else if(wyb==2){
+                      zaglebie.sprawdzUstawienie();
+                      }
+                    }
                     break;
                     case 15:
                     JednostkaOrganizacyjna organizacja15= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -516,8 +655,17 @@ public class Kompozyt {
                  gornik.dodaj(leaf179);
                  gornik.dodaj(leaf1710);
                  gornik.dodaj(leaf1711);
-                 organizacja15.wypiszInfo();
-                 gornik.sprawdzUstawienie();
+                  wyb=0;
+                 while(wyb!=3){
+                      System.out.println("\nWybrany klub to Górnik Zabrze\n1.Informacje o Klubie\n2.Aktualnie grana formacja\n3.Wyjscie");
+                      wyb=in.nextInt();
+                      if(wyb==1){
+                      organizacja15.wypiszInfo();
+                      }
+                      else if(wyb==2){
+                      gornik.sprawdzUstawienie();
+                      }
+                    }
                     break;
                     case 16:
                     JednostkaOrganizacyjna organizacja16= new JednostkaOrganizacyjna("UEFA","Organizacja");
@@ -549,13 +697,23 @@ public class Kompozyt {
                  arka.dodaj(leaf189);
                  arka.dodaj(leaf1810);
                  arka.dodaj(leaf1811);
-                 organizacja16.wypiszInfo();
-                 arka.sprawdzUstawienie();
+                  wyb=0;
+                 while(wyb!=3){
+                      System.out.println("\nWybrany klub to Arka Gdynia\n1.Informacje o Klubie\n2.Aktualnie grana formacja\n3.Wyjscie");
+                      wyb=in.nextInt();
+                      if(wyb==1){
+                      organizacja16.wypiszInfo();
+                      }
+                      else if(wyb==2){
+                      arka.sprawdzUstawienie();
+                      }
+                    }
                     break;
          }
        
-         
-         
-    }
+          System.out.println("Wybierz zespół\n 1.Lechia Gdańsk \n2.Piast Gliwice\n3.Zagłębie Lubin\n4.Pogoń Szczecin \n5.Legia Warszawa \n6.Cracovia\n7.Jagiellonia Białystok\n8.Lech Poznań\n9.Wisła Kraków\n10.Wisła Płock\n11.Korona Kielce\n12.Śląsk Wrocław\n13.Miedź Legnica\n14.Zagłębie Sosnowiec\n15.Górnik Zabrze\n16.Arka Gdynia\n0.Exit");
+}while(a!=0);     
+        System.out.println("Dziekuje za skorzystanie z programu");
+}
     
 }
