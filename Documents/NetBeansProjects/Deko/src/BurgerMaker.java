@@ -28,6 +28,13 @@ burger=new Burger();
 burger=new SosBBQ(burger);
 burger=new PodwojnySer(burger);
 zamowienia.add(burger);
+//
+//Burger z sosem BBQ i podwójnym serem
+burger=new Burger();
+burger=new SosBBQ(burger);
+burger=new PodwojnySer(burger);
+burger=new Bekon(burger);
+zamowienia.add(burger);
         for (int i = 0; i <zamowienia.size(); i++) {
             int numerZamowienia=i+1;
             System.out.println("Zamówienie "+numerZamowienia+":");
